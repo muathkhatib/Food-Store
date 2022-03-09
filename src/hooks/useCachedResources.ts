@@ -1,7 +1,7 @@
-import { FontAwesome } from '@expo/vector-icons';
-import * as Font from 'expo-font';
-import * as SplashScreen from 'expo-splash-screen';
-import { useEffect, useState } from 'react';
+import { FontAwesome } from "@expo/vector-icons";
+import * as Font from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
+import { useEffect, useState } from "react";
 
 export default function useCachedResources() {
   const [isLoadingComplete, setLoadingComplete] = useState(false);
@@ -15,10 +15,12 @@ export default function useCachedResources() {
         // Load fonts
         await Font.loadAsync({
           ...FontAwesome.font,
-          'space-mono': require('../assets/fonts/SpaceMono-Regular.ttf'),
+          "space-mono": require("../../assets/fonts/SpaceMono-Regular.ttf"),
+          "Cairo-Black": require("../../assets/fonts/Cairo-Black.ttf"),
+          "Cairo-Bold": require("../../assets/fonts/Cairo-Bold.ttf"),
+          "Cairo-Regular": require("../../assets/fonts/Cairo-Regular.ttf"),
         });
       } catch (e) {
-        // We might want to provide this error information to an error reporting service
         console.warn(e);
       } finally {
         setLoadingComplete(true);
