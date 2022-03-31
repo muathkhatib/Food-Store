@@ -1,34 +1,16 @@
 {
   "expo": {
-    "name": "food-store-app",
-    "slug": "food-store-app",
+    "name": "Food Store",
+    "icon": "./assets/media/869636.png",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "slug": "your-app-slug",
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.muathkhatib.mkfoodstore",
+      "buildNumber": "1.0.0"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "web": {
-      "favicon": "./assets/images/favicon.png"
+      "package": "com.muathkhatib.mkfoodstore",
+      "versionCode": 1
     }
   }
 }
